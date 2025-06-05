@@ -1,0 +1,87 @@
+/* Base styles */
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Scales heading size */
+  text-align: center;
+}
+
+#reload-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+  transition: background 0.15s;
+  width: 100%;
+  max-width: 200px;
+}
+
+#reload-btn:hover {
+  background: #1d4ed8;
+}
+
+#error-msg {
+  color: #dc2626;
+  font-weight: 600;
+  text-align: center;
+}
+
+#user-container {
+  width: 100%;
+  max-width: 640px;
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+  word-break: break-word;
+}
+
+.card .dim {
+  color: #475569;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+/* 🌐 Responsive enhancements */
+@media (max-width: 480px) {
+  #reload-btn {
+    font-size: 0.95rem;
+    padding: 0.45rem 1rem;
+  }
+
+  .card {
+    padding: 0.75rem 1rem;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card .dim {
+    font-size: 0.85rem;
+  }
+}
